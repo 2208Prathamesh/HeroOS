@@ -1,7 +1,7 @@
 {
-    "name": "WEBSERVER",
-    "version": "1.0.0",
-    "description": "description-of-your-project",
+    "name": "HEROOS",
+    "version": "1.0.1",
+    "description": "POWERED BY HEROPIXEL NETWORK ",
     "main": "index.js",
     "scripts": {
         "start": "node index.js"
