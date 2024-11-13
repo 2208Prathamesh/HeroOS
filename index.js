@@ -6,7 +6,7 @@
  *  /__/  /__/  /______/  /__/  \__\  /_______/           /_______/  /________/
  *        
  *              
- *  HeroOS Operating System 1.0.1 (Beta)
+ *  HeroOS Operating System (Beta)
  *  (c) 2024 Prathamesh Barbole, Heropixel Network and HeroOS Contributors,
  * 
 */
