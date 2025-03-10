@@ -1,4 +1,4 @@
-# HeroOS v1.1.0 (),
+# HeroOS v1.0.0 (),
 
 ![\[!image\](https://i.imgur.com/5UtEp67.jpeg)](https://i.imgur.com/5UtEp67.jpeg)
 
