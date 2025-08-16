@@ -4,7 +4,6 @@
 
 ![Discord](https://img.shields.io/discord/1253782902618194011?label=Discord&logo=Discord&logoColor=white&style=for-the-badge)
 ![GitHub contributors](https://img.shields.io/github/contributors/2208Prathamesh/HeroOS?style=for-the-badge)
-YQZWVRP4GDCQMSYOZNSHK33BRCRIWJLU 
 
 # HERO OS 
 
@@ -27,7 +26,7 @@ Navigate to `http://localhost:<port>` to access the Hero OS. Log in with your br
 Contributions are welcome. Please fork the repository and submit pull requests with your proposed changes.
 
 ## License
-(c) 2024 Prathamesh Barbole, Heropixel Network and HeroOS Contributors . All rights reserved. Licensed under the MIT License.
+(c) 2025 Prathamesh Barbole, Heropixel Network and HeroOS Contributors . All rights reserved. Licensed under the MIT License.
 
  
 
