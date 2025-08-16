@@ -1,10 +1,11 @@
-# HeroOS v1.0.0 ( **Origin** ),
+# HeroOS v1.0.0 (**Origin**),
 
 ![\[!image\](https://i.imgur.com/5UtEp67.jpeg)](https://i.imgur.com/5UtEp67.jpeg)
 
 ![Discord](https://img.shields.io/discord/1253782902618194011?label=Discord&logo=Discord&logoColor=white&style=for-the-badge)
 ![GitHub contributors](https://img.shields.io/github/contributors/2208Prathamesh/HeroOS?style=for-the-badge)
 YQZWVRP4GDCQMSYOZNSHK33BRCRIWJLU 
+
 # HERO OS 
 
 ## Overview
