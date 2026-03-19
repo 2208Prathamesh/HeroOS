@@ -21,6 +21,15 @@
     }
   });
 </script>
+<script>
+    // Custom Wallpaper Loader
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedWallpaper = localStorage.getItem('wallpaper');
+        if (savedWallpaper) {
+            document.body.style.backgroundImage = `url('${savedWallpaper}')`;
+        }
+    });
+</script>
 
   <div id="container">
     <div class="main">
@@ -54,15 +63,69 @@
 <body>
   
 
+  <style>
+    #heroos-lock-glass {
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(17, 17, 17, 0.4);
+      backdrop-filter: blur(20px) saturate(150%);
+      -webkit-backdrop-filter: blur(35px) saturate(200%);
+      z-index: 2147483647; display: none; flex-direction: column;
+      justify-content: center; align-items: center;
+      font-family: 'Poppins', sans-serif; color: white;
+      transition: opacity 0.5s;
+    }
+    #heroos-lock-glass img { width: 90px; margin-bottom: 20px; border-radius: 50%; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+    #heroos-lock-glass input {
+      padding: 12px 20px; font-size: 16px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(0,0,0,0.4); color: white; margin-bottom: 15px; text-align: center;
+      outline: none; transition: 0.3s;
+    }
+    #heroos-lock-glass input:focus { border-color: #ff7b00; background: rgba(0,0,0,0.6); }
+    #heroos-lock-glass button {
+      padding: 10px 25px; border-radius: 8px; border: none; background: rgba(255,123,0,0.8); color: white;
+      font-size: 16px; font-weight: 600; cursor: pointer; transition: 0.3s; backdrop-filter: blur(4px);
+    }
+    #heroos-lock-glass button:hover { background: rgba(255,123,0,1); transform: scale(1.05); }
+    #heroos-lock-error { color: #ff5555; font-size: 14px; margin-top: 10px; display: none; }
+    @keyframes lockShake { 0%,100%{transform:translateX(0);} 25%{transform:translateX(-10px);} 75%{transform:translateX(10px);} }
+  </style>
+
+  <div id="heroos-lock-glass">
+    <img src="../../Assets/heroos-logo.png" alt="HeroOS" onerror="this.src='ICONS/heroos-logo.png'">
+    <h2 style="font-weight: 500; letter-spacing: 1px; margin-bottom: 20px;">Admin</h2>
+    <input type="password" id="heroosPWD" placeholder="Enter Password" autofocus>
+    <button onclick="unlockHeroOS()">Login</button>
+    <p id="heroos-lock-error">Incorrect Password</p>
+  </div>
+
   <script>
     const storedPassword = localStorage.getItem('password');
-
     if (storedPassword) {
-      const enteredPassword = prompt('Enter the password to access Setup.html:');
-      if (enteredPassword !== storedPassword) {
-        alert('Incorrect password. You do not have access to this page.');
-        window.close(); // Close the tab if the password is incorrect.
-      }
+      const lockOverlay = document.getElementById('heroos-lock-glass');
+      lockOverlay.style.display = 'flex';
+      // Hide body scrolling just in case
+      document.body.style.overflow = 'hidden';
+
+      window.unlockHeroOS = function() {
+        const entered = document.getElementById('heroosPWD').value;
+        if (entered === storedPassword) {
+          lockOverlay.style.opacity = '0';
+          setTimeout(() => {
+            lockOverlay.style.display = 'none';
+            document.body.style.overflow = 'auto'; // restore
+          }, 500);
+        } else {
+          const err = document.getElementById('heroos-lock-error');
+          err.style.display = 'block';
+          err.style.animation = 'none';
+          setTimeout(() => err.style.animation = 'lockShake 0.4s', 10);
+        }
+      };
+      
+      // Allow pressing Enter key to submit
+      document.getElementById('heroosPWD').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') unlockHeroOS(); 
+      });
     }
   </script>
 </body>
@@ -72,7 +135,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BJH OS</title>
+  <title>HeroOS</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Stylesheet -->
@@ -154,7 +217,7 @@ body {
   <body>
     <div class="container">
 <div>
-   <iframe src="https://bjh-os-apps-market.w3spaces.com/bjh-os-live-news-show-iframe.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="100px" width="500px" allowfullscreen></iframe><span style="background-color: white; font-size: 25px;"></span>
+   <iframe src="https://heroos-apps-market.w3spaces.com/heroos-live-news-show-iframe.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="100px" width="500px" allowfullscreen></iframe><span style="background-color: white; font-size: 25px;"></span>
    <h2>Apps</h2>
    <a download="" href="Root Directory/OS Files/clock.html" style="font-size: 25px;"><img alt="Clock" height="77" src="Root Directory/OS Files/ICONS/clock icon.png" width="77" />&nbsp;</a>
    <div>
@@ -184,7 +247,7 @@ body {
 <div><br /></div>
       <div><br /></div>
       <div><br /></div>
-         <div><span style="background-color: white; font-size: 25px;"></span><a download="" href="https://bjh-os.blogspot.com/p/wallpaper.html" style="font-size: 25px;"><img alt="Wallpaper" height="62" src="Root Directory/OS Files/ICONS/wallpaper icon.png" width="72" />&nbsp;</a></div>
+         <div><span style="background-color: white; font-size: 25px;"></span><a download="" href="https://heroos.blogspot.com/p/wallpaper.html" style="font-size: 25px;"><img alt="Wallpaper" height="62" src="Root Directory/OS Files/ICONS/wallpaper icon.png" width="72" />&nbsp;</a></div>
          <div><span style="background-color: white; font-size: 25px;">Wallpaper&nbsp;</span></div>
          <div><br /></div>
          <div><br /></div>
@@ -245,13 +308,13 @@ body {
          <div><span style="background-color: white; font-size: 25px;"><br /></span></div>
          <div><span style="background-color: white; font-size: 25px;"><br /></span></div>
          <div><span style="background-color: white; font-size: 25px;"><br /></span></div>
-         <div><a download="" href="https://bjh-os.blogspot.com/p/latest-news-bjh-os.html" style="font-size: 25px;"><img alt="Latest News" height="57" src="Root Directory/OS Files/ICONS/latest news icon.png" width="66" />&nbsp;</a></div>
+         <div><a download="" href="https://heroos.blogspot.com/p/latest-news-heroos.html" style="font-size: 25px;"><img alt="Latest News" height="57" src="Root Directory/OS Files/ICONS/latest news icon.png" width="66" />&nbsp;</a></div>
          <div><span style="background-color: white; font-size: 25px;">Latest News&nbsp;</span></div>
          <div><br /></div>
          <div><br /></div>
          <div><br /></div>
          <div><br /></div>
-         <div><a download="" href="https://bjh-os-apps-market.w3spaces.com/bjh-os-new-app-market.html" style="font-size: 25px;"><img alt="Apps Market" height="60" src="Root Directory/OS Files/ICONS/bjh os store.png" width="69" />&nbsp;</a></div>
+         <div><a download="" href="https://heroos-apps-market.w3spaces.com/heroos-new-app-market.html" style="font-size: 25px;"><img alt="Apps Market" height="60" src="Root Directory/OS Files/ICONS/HeroOS store.png" width="69" />&nbsp;</a></div>
          <div><span style="background-color: white; font-size: 25px;">Apps Market</span></div>
          <div><span style="background-color: white; font-size: 25px;"><br /></span></div>
          <div><span style="background-color: white; font-size: 25px;"><br /></span></div>
@@ -303,7 +366,7 @@ body {
             <span style="background-color: white; font-size: 25px;">Twitter</span>
             <h2>Games (No Internet Required)</h2>
 
-<div><span style="background-color: white; font-size: 25px;">&nbsp;</span><a download="" href="Emoji game for bjh-os/Emoji Game Setup.html" style="font-size: 25px;"><img alt="emoji game" height="54" src="Emoji game for bjh-os/emoji icon.jfif" width="62" />&nbsp;</a></div><div><span style="background-color: white; font-size: 25px;">Emoji Game</span></div>
+<div><span style="background-color: white; font-size: 25px;">&nbsp;</span><a download="" href="Emoji game for heroos/Emoji Game Setup.html" style="font-size: 25px;"><img alt="emoji game" height="54" src="Emoji game for heroos/emoji icon.jfif" width="62" />&nbsp;</a></div><div><span style="background-color: white; font-size: 25px;">Emoji Game</span></div>
 <div>
  <div><span style="background-color: white; font-size: 25px;"></span></div>
          <div><span style="background-color: white; font-size: 25px;"><br /></span></div>

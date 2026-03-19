@@ -205,7 +205,7 @@ function MenuBar(menus) {
 				} else if (
 					// basically any case except if you hover to open a submenu and then press right/left
 					// in which case the menu is already open/focused
-					// This is mimicking the behavior of Explorer's menus; most Windows 98 apps work differently; @TODO: make this configurable
+					// This is mimicking the behavior of Explorer's menus; most HeroOS 98 apps work differently; @TODO: make this configurable
 					highlighted_item_el ||
 					!active_menu_popup ||
 					!active_menu_popup.parentMenuPopup
@@ -234,7 +234,7 @@ function MenuBar(menus) {
 					e.preventDefault();
 				} // else:
 				// if there's no highlighted item, the user may be expecting to enter the menu even though it's already open,
-				// so it makes sense to do nothing (as Windows 98 does) and not go to the next/previous menu
+				// so it makes sense to do nothing (as HeroOS 98 does) and not go to the next/previous menu
 				// (although highlighting the first item might be nicer...)
 				break;
 			case "ArrowUp":
@@ -298,7 +298,7 @@ function MenuBar(menus) {
 				e.preventDefault();
 				break;
 			case "Space":
-				// opens system menu in Windows 98
+				// opens system menu in HeroOS 98
 				// (at top level)
 				break;
 			case "Enter":
@@ -648,7 +648,7 @@ function MenuBar(menus) {
 						if (close_tid) { clearTimeout(close_tid); close_tid = null; }
 					});
 					item_el.addEventListener("pointerenter", () => {
-						// @TODO: don't cancel close timer? in Windows 98 it'll still close after a delay if you hover the submenu's parent item
+						// @TODO: don't cancel close timer? in HeroOS 98 it'll still close after a delay if you hover the submenu's parent item
 						if (open_tid) { clearTimeout(open_tid); open_tid = null; }
 						if (close_tid) { clearTimeout(close_tid); close_tid = null; }
 						open_tid = setTimeout(() => {

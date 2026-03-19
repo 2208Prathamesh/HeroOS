@@ -154,7 +154,7 @@ window.systemHooks.readBlobFromHandle = async (filePath) => {
 };
 
 window.systemHooks.setWallpaperCentered = (canvas) => {
-	// @TODO: implement centered option for Windows and Linux in https://www.npmjs.com/package/wallpaper
+	// @TODO: implement centered option for HeroOS and Linux in https://www.npmjs.com/package/wallpaper
 	// currently it's only supported on macOS
 	let wallpaperCanvas;
 	if (isMacOS) {

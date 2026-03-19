@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 .bg {
-	background-image: url("../Customize BJH OS/Background Wallpaper/wallpaper.jpg");
+	background-image: url("../Customize HeroOS/Background Wallpaper/wallpaper.jpg");
 	background-size: cover;
   	height: 100vh;
 	overflow: hidden;
@@ -11,18 +11,18 @@
 .DesktopShow {display: block;}
 
 .darktheme {
-	background-color: rgba(0, 0, 0, 0.5);
-	-webkit-backdrop-filter: blur(35px) saturate(150%);
-	  backdrop-filter: blur(35px) saturate(150%);
+	background-color: rgba(10, 10, 20, 0.55);
+	-webkit-backdrop-filter: blur(40px) saturate(180%);
+	  backdrop-filter: blur(40px) saturate(180%);
 	  color: white;
-	  border: 1px solid #f1f1f129;
-	  box-shadow: 0px 0px 5px rgb(0, 0, 0);
-	  border-radius: 9px;
+	  border: 1px solid rgba(255, 255, 255, 0.15);
+	  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.37);
+	  border-radius: 12px;
 	  width: inherit;
 	  height: inherit;
 	  padding: inherit;
 	  overflow: inherit;
-	  transition: all 0.3s;
+	  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .darkthemeComp {
@@ -106,16 +106,17 @@
 }
 
 .desktopIcons:hover { 	
-	background-color: rgba(107, 107, 107, 0.25);
-    -webkit-backdrop-filter: blur(15px);
-	  backdrop-filter: blur(15px);
-	  border-radius: 10px;
-	  box-shadow: 0px 0px 7.5px rgb(0, 0, 0);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+	background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(20px);
+	  backdrop-filter: blur(20px);
+	  border-radius: 12px;
+	  border: 1px solid rgba(255, 255, 255, 0.2);
+	  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
-.desktopIcons:active {-webkit-transform: scale(1);transform: scale(1);}
+.desktopIcons:active {-webkit-transform: scale(0.95);transform: scale(0.95);}
 	  
 #context-menu {
 	position: fixed;
@@ -402,7 +403,7 @@
 	}
 	.welcome-options button:hover{background-color: rgba(109, 109, 109, 0.3);}
 	.welcome-options button:active{background-color: rgba(109, 109, 109, 0.4);}
-	#rgos-fam{margin-left: 7.5px;}
+	#heroos-fam{margin-left: 7.5px;}
 
   .Welcome #welcome-logo{
 	  align-items: center;
@@ -450,12 +451,12 @@
 		display: block;
 	}
 		
-	#RGOS-cont{
+	#HeroOS-cont{
 		width:102%;
 		display: none;
 	}
-	#RGOS-cont span{display: flex;}
-	.RGOS-fam-btn{
+	#HeroOS-cont span{display: flex;}
+	.HeroOS-fam-btn{
 		width: calc(100% /1);
 		background-color: rgba(109, 109, 109, 0.2);
 		border-radius: 5px;
@@ -464,18 +465,18 @@
 		padding: 7.5px;
 		transition: all 0.3s;
 	}
-	.RGOS-fam-btn:hover{background-color: rgba(109, 109, 109, 0.3);}
-	.RGOS-fam-btn:active{background-color: rgba(109, 109, 109, 0.4);}
-	.RGOS-fam-btn span{
+	.HeroOS-fam-btn:hover{background-color: rgba(109, 109, 109, 0.3);}
+	.HeroOS-fam-btn:active{background-color: rgba(109, 109, 109, 0.4);}
+	.HeroOS-fam-btn span{
 		text-align: left;
 		align-items: center;
 	}
-	.RGOS-fam-btn img{
+	.HeroOS-fam-btn img{
 		width: calc(100% / 1);
 		margin-top: 20px; margin-bottom: 10px;
 	}
-	.RGOS-fam-btn span img{width: 22.5px; margin-top: 0; margin-bottom: 0;}
-	.RGOS-fam-btn span p{margin-left: -20px; background: none; padding:0; padding-left: 10px;}
+	.HeroOS-fam-btn span img{width: 22.5px; margin-top: 0; margin-bottom: 0;}
+	.HeroOS-fam-btn span p{margin-left: -20px; background: none; padding:0; padding-left: 10px;}
 
 
 	.welcome-btn {
@@ -502,17 +503,17 @@
 		position: fixed;
 		bottom: -47px;
 		  width: 97%; 
-		height: 47px;
+		height: 48px;
 		left: 50%;
 		z-index: 101;
-		background-color: rgba(0, 0, 0, 0.6);
-		-webkit-backdrop-filter: blur(35px) saturate(135%);
-		backdrop-filter: blur(35px) saturate(135%);
+		background-color: rgba(15, 15, 15, 0.65);
+		-webkit-backdrop-filter: blur(40px) saturate(150%);
+		backdrop-filter: blur(40px) saturate(150%);
 		  color: white;
-		  border: 0.5px solid #f1f1f123;
-		  box-shadow: 0px 0px 5px rgb(0, 0, 0);
-		  border-radius: 15px;
-		transition: all 0.45s;
+		  border: 1px solid rgba(255, 255, 255, 0.1);
+		  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.37);
+		  border-radius: 20px;
+		transition: all 0.45s cubic-bezier(0.25, 0.8, 0.25, 1);
 		transform: translateX(-50%);
 	  }
 		#tbItems{transition: opacity 0.3s;}
@@ -1917,7 +1918,7 @@
   #Defender-more{margin-left: 55px;}
   #bluetooth-more{margin-left: 55px;}
   #spotify-more{margin-left: 72.5px;}
-  #RGOS-more{margin-left: 25px;}
+  #HeroOS-more{margin-left: 25px;}
   #Ondrive-more{margin-left: 52.5px;}
   #adobe-more{margin-left: 72.5px;}
   #discord-more{margin-left: 65px;}

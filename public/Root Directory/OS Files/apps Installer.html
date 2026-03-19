@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Hero OS Package/App Installer</title>
+    <title>HeroOS Package/App Installer</title>
     <style>body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -59,10 +59,10 @@
 </head>
 
 <body>
-    <h1>Hero OS Package/App Installer</h1>
-    <h5>If the file is a .zip file, extract it, open the folder, and select the .html file you downloaded from Hero OS App Market or follow the instructions where you downloaded it.</h5>
+    <h1>HeroOS Package/App Installer</h1>
+    <h5>If the file is a .zip file, extract it, open the folder, and select the .html file you downloaded from HeroOS App Market or follow the instructions where you downloaded it.</h5>
     <input type="file" id="fileInput" accept=".html">
-    <button id="openFileButton">Open Hero OS App/Package File</button>
+    <button id="openFileButton">Open HeroOS App/Package File</button>
     <div id="errorContainer"></div>
 
     <div id="installedAppsContainer">
@@ -149,7 +149,7 @@
                     // Reload the page to display the newly installed app
                     location.reload();
                 } else {
-                    const confirmInstall = confirm("Hero OS Security detected that This app is not signed by Hero OS. So may be this can contain virus. Do you still want to install this third-party app?");
+                    const confirmInstall = confirm("HeroOS Security detected that This app is not signed by HeroOS. So may be this can contain virus. Do you still want to install this third-party app?");
                     if (confirmInstall) {
                         document.getElementById("errorContainer").textContent = ""; // Clear any previous error message
 

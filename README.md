@@ -1,4 +1,4 @@
-# HeroOS v1.0.0 (**Origin**),
+# HeroOS v1.0.1 (Origin) (**Origin**),
 
 ![\[!image\](https://i.imgur.com/5UtEp67.jpeg)](https://i.imgur.com/5UtEp67.jpeg)
 
@@ -20,7 +20,7 @@ You can read our documentation at [www.heroos.tech](http://www.heroos.tech/)
 Edit the `index.js` file in the root directory to set up the application settings including the database connection and port.
 
 ## Usage
-Navigate to `http://localhost:<port>` to access the Hero OS. Log in with your browser and Enjoy.
+Navigate to `http://localhost:<port>` to access the HeroOS. Log in with your browser and Enjoy.
 
 ## Contributing
 Contributions are welcome. Please fork the repository and submit pull requests with your proposed changes.

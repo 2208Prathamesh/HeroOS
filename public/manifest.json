@@ -1,7 +1,7 @@
 {
-    "name": "Hero OS v1.0.0",
-    "short_name": "Hero OS", 
-    "description": "Hero OS, Powered by Heropixel Network based on the Windows Operating System. Developed by Prathamesh Barbole",
+    "name": "HeroOS v1.0.1 (Origin)",
+    "short_name": "HeroOS", 
+    "description": "HeroOS, Powered by Heropixel Network based on the Windows Operating System. Developed by Prathamesh Barbole",
     "start_url": ".",
     "theme_color": "#ff7b00",
     "background_color": "#000000",

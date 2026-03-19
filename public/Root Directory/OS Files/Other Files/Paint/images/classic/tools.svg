@@ -228,7 +228,7 @@
          sodipodi:nodetypes="ccccccc"
          inkscape:connector-curvature="0"
          id="path6759"
-         d="M 10.32,3.3 C 10.39,3.25 10.45,3.17 10.45,3.06 V 2.51 L 12.04,0.93 V 1.72 L 10.58,3.17 Z"
+         d="M 10.32,3.3 C 10.39,3.25 10.45,3.17 10.45,v1.0.1 (Origin) V 2.51 L 12.04,0.93 V 1.72 L 10.58,3.17 Z"
          style="fill:#bebe00;fill-opacity:0.99494952;fill-rule:evenodd;stroke:#000000;stroke-width:0.1984375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="ccccccccc"

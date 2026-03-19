@@ -11315,7 +11315,7 @@ module.exports = function({fileContentString}) {
 
 
 },{"../Palette":37}],55:[function(require,module,exports){
-// Load Windows .theme and .themepack files
+// Load HeroOS .theme and .themepack files
 var Palette, parseINIString, parseThemeFileString;
 
 Palette = require("../Palette");
@@ -11511,7 +11511,7 @@ formats = {
     write: (require("./formats/SKP")).write
   },
   WINDOWS_THEME_COLORS: {
-    name: "Windows desktop theme",
+    name: "HeroOS desktop theme",
     fileExtensions: ["theme", "themepack"],
     readFromText: require("./formats/theme")
   },

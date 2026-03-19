@@ -610,7 +610,7 @@ function $Window(options) {
 			} else {
 				// no taskbar
 
-				// @TODO: make this metrically similar to what Windows 98 does
+				// @TODO: make this metrically similar to what HeroOS 98 does
 				// @TODO: DRY! This is copied heavily from maximize()
 				// @TODO: after minimize (without taskbar) and maximize, restore should restore original position before minimize
 				// OR should it not maximize but restore the unmaximized state? I think I tested it but I forget.
@@ -1318,7 +1318,7 @@ You can also disable this warning by passing {iframes: {ignoreCrossOrigin: true}
 		$G.off("pointermove", update_drag);
 		$G.off("scroll", update_drag);
 		$("body").removeClass("dragging");
-		// $w.applyBounds(); // Windows doesn't really try to keep windows on screen
+		// $w.applyBounds(); // HeroOS doesn't really try to keep windows on screen
 		// but you also can't really drag off of the desktop, whereas here you can drag to way outside the web page.
 		$w.bringTitleBarInBounds();
 		drag_pointer_id = -1; // prevent bringTitleBarInBounds from making the window go to top left when unminimizing window from taskbar after previously dragging it

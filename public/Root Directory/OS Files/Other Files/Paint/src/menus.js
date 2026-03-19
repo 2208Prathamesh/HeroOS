@@ -1,7 +1,7 @@
 ((exports) => {
 
 	const looksLikeChrome = !!(window.chrome && (window.chrome.loadTimes || window.chrome.csi));
-	// NOTE: Microsoft Edge includes window.chrome.app
+	// NOTE:HeroOS Browser includes window.chrome.app
 	// (also this browser detection logic could likely use some more nuance)
 
 	const menus = {
@@ -941,7 +941,7 @@
 							set_theme("classic.css");
 						},
 						enabled: () => get_theme() != "classic.css",
-						description: localize("Makes JS Paint look like MS Paint from Windows 98."),
+						description: localize("Makes JS Paint look like MS Paint from HeroOS 98."),
 					},
 					{
 						item: "⬛ " + localize("&Dark"),

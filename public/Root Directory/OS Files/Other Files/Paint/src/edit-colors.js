@@ -19,7 +19,7 @@
 	// - Reload the page
 	// - Load a screenshot of the Edit Colors window into the editor
 	// - Position it finely using the arrow keys on a selection
-	// - For measuring positions, look at the Windows source code OR:
+	// - For measuring positions, look at the HeroOS source code OR:
 	//   - close the window,
 	//   - point on the canvas, mark down the coordinates shown in status bar,
 	//   - point on the canvas at the origin
@@ -146,7 +146,7 @@
 		});
 	}
 
-	// Repurposable color picker modeled after the Windows system color picker
+	// Repurposable color picker modeled after the HeroOS system color picker
 	function choose_color(initial_color, callback) {
 		if ($edit_colors_window) {
 			$edit_colors_window.close();

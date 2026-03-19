@@ -23,6 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - You can use `.main-canvas` selector to access the canvas element.
 - URL parameter `#load:<URL>` to load a file from a URL
 
-[Unreleased]: https://github.com/1j01/jspaint/compare/v1.0.0...HEAD
-[1.1.0]: https://github.com/1j01/jspaint/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/1j01/jspaint/releases/tag/v1.0.0
+[Unreleased]: https://github.com/1j01/jspaint/compare/v1.0.1 (Origin)...HEAD
+[1.1.0]: https://github.com/1j01/jspaint/compare/v1.0.1 (Origin)...v1.1.0
+[1.0.0]: https://github.com/1j01/jspaint/releases/tag/v1.0.1 (Origin)

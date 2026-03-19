@@ -7,7 +7,7 @@
  *        
  *              
  *  HeroOS Operating System (Beta)
- *  (c) 2024 Prathamesh Barbole, Heropixel Network and HeroOS Contributors,
+ *  (c) 2024-2026 Prathamesh Barbole, Heropixel Network and HeroOS Contributors,
  * 
 */
 

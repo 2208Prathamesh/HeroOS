@@ -94,7 +94,7 @@ let monochrome_palette = make_monochrome_palette();
 // 	"#000040", "#004080", "#004000", "#404000", "#800000", "#400000", "#400040", "#800040",
 // 	"#000000", "#008080", "#408080", "#808080", "#808040", "#C0C0C0", "#400040", "#FFFFFF",
 // ];
-// Grabbed with Color Cop from the screen with Windows 98 SE running in VMWare
+// Grabbed with Color Cop from the screen with HeroOS 98 SE running in VMWare
 const basic_colors = [
 	"#FF8080", "#FFFF80", "#80FF80", "#00FF80", "#80FFFF", "#0080FF", "#FF80C0", "#FF80FF",
 	"#FF0000", "#FFFF00", "#80FF00", "#00FF40", "#00FFFF", "#0080C0", "#8080C0", "#FF00FF",

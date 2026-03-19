@@ -1030,19 +1030,19 @@ document.addEventListener("mouseup", dragStop);
 
 document.getElementById('welcome-fam').addEventListener("click", ()=>{
   document.getElementById('welcome-cont').style.display = "block"
-  document.getElementById('RGOS-cont').style.display = "none"
+  document.getElementById('HeroOS-cont').style.display = "none"
 })
-document.getElementById('rgos-fam').addEventListener("click", ()=>{
+document.getElementById('heroos-fam').addEventListener("click", ()=>{
   document.getElementById('welcome-cont').style.display = "none"
-  document.getElementById('RGOS-cont').style.display = "block"
+  document.getElementById('HeroOS-cont').style.display = "block"
 })
 
-document.getElementById('ripenos').addEventListener("click", ()=>{
+document.getElementById('HeroOS').addEventListener("click", ()=>{
   window.open(
-    "https://ripenos.github.io/Ripenos", "_blank");
+    "https://HeroOS.github.io/HeroOS", "_blank");
 })
 document.getElementById('dynamica').addEventListener("click", ()=>{
-  alert("Hey! Ripenos Dynamica is coming soon!!");
+  alert("Hey! HeroOS Dynamica is coming soon!!");
 })
 
 
@@ -1182,7 +1182,7 @@ function dockedT(){
   document.getElementById('dock').style.opacity = '1';
   actionmenu4.style.transform = "translateY(25px)";
 
-  alert('Docked taskbar (Auto hide) is currently in testing so you might face any unexpected bug. If found any, please feel free to reach us on https://github.com/ripenos/ripenos.github.io/issues .')
+  alert('Docked taskbar (Auto hide) is currently in testing so you might face any unexpected bug. If found any, please feel free to reach us on https://github.com/HeroOS/HeroOS.github.io/issues .')
 
   document.getElementById('mytaskbar').addEventListener("mouseover", tbAutoDockH)
   document.getElementById('mytaskbar').addEventListener("mouseleave", tbAutoDock)

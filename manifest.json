@@ -1,7 +1,7 @@
 {
     "name": "HeroOS",
     "short_name": "HeroOS", 
-    "description": "Hero OS, Powered by Heropixel Network based on the Windows. Developed by Prathamesh Barbole",
+    "description": "HeroOS, Powered by Heropixel Network based on the Windows. Developed by Prathamesh Barbole",
     "start_url": ".",
     "theme_color": "#ff7b00",
     "background_color": "#000000",

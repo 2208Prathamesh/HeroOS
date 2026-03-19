@@ -9,6 +9,6 @@
 ||                                                                                          
 ||                                                                                          
 ||  HeroOS Operating System 1.0.1 (Beta)                                                     
-||  (c) 2024 Prathamesh Barbole, Heropixel Network and HeroOS Contributors,                  
+||  (c) 2026 Prathamesh Barbole, Heropixel Network and HeroOS Contributors,                  
 ||                                                                                                                                                                               
    

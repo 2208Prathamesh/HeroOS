@@ -4,7 +4,7 @@ const path = require("path");
 
 app.enableSandbox();
 
-// Handle creating/removing shortcuts on Windows when installing/uninstalling.
+// Handle creating/removing shortcuts on HeroOS when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
 	app.quit();
 }
@@ -18,8 +18,8 @@ if (isDev) {
 
 // @TODO: let user apply this setting somewhere in the UI (togglable)
 // (Note: it would be better to use REG.EXE to apply the change, rather than a .reg file)
-// This registry modification changes the right click > Edit option for images in Windows Explorer
-const reg_contents = `Windows Registry Editor Version 5.00
+// This registry modification changes the right click > Edit option for images in HeroOS Explorer
+const reg_contents = `HeroOS Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\\SystemFileAssociations\\image\\shell\\edit\\command]
 @="\\"${process.argv[0].replace(/\\/g, "\\\\")}\\" ${isPackaged ? "" : '\\".\\" '}\\"%1\\""

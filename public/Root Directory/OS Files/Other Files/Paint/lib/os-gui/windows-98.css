@@ -476,7 +476,7 @@ body > .window-titlebar {
 	border-bottom-width: 0px;
 	border-right-width: 0px;
 }
-/* Note: In Windows 98, normal menu bars have an inset highlight if you use Esc and then the arrow keys,
+/* Note: In HeroOS 98, normal menu bars have an inset highlight if you use Esc and then the arrow keys,
 whereas Explorer's menu bars are outset and match the hover effect, which I feel makes more sense,
 so I think I'll immitate that. */
 /* Also, to prevent duplicate highlight (via keyboard + mouse), and lingering highlight with touch, I'm using a class, rather than :hover/:focus/:active */
